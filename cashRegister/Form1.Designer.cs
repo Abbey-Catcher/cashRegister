@@ -56,6 +56,7 @@
             // receiptLabel
             // 
             this.receiptLabel.BackColor = System.Drawing.Color.White;
+            this.receiptLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.receiptLabel.Location = new System.Drawing.Point(318, 58);
             this.receiptLabel.Name = "receiptLabel";
             this.receiptLabel.Size = new System.Drawing.Size(277, 381);
@@ -63,12 +64,14 @@
             // 
             // printReceiptButton
             // 
+            this.printReceiptButton.Enabled = false;
             this.printReceiptButton.Location = new System.Drawing.Point(21, 447);
             this.printReceiptButton.Name = "printReceiptButton";
             this.printReceiptButton.Size = new System.Drawing.Size(280, 42);
             this.printReceiptButton.TabIndex = 1;
             this.printReceiptButton.Text = "Print Receipt";
             this.printReceiptButton.UseVisualStyleBackColor = true;
+            this.printReceiptButton.Click += new System.EventHandler(this.printReceiptButton_Click);
             // 
             // newOrderButton
             // 
@@ -78,6 +81,7 @@
             this.newOrderButton.TabIndex = 2;
             this.newOrderButton.Text = "New Order";
             this.newOrderButton.UseVisualStyleBackColor = true;
+            this.newOrderButton.Click += new System.EventHandler(this.newOrderButton_Click);
             // 
             // numberOfRedsLabel
             // 
@@ -211,6 +215,7 @@
             this.calculateChangeButton.TabIndex = 18;
             this.calculateChangeButton.Text = "Calculate Change";
             this.calculateChangeButton.UseVisualStyleBackColor = true;
+            this.calculateChangeButton.Click += new System.EventHandler(this.calculateChangeButton_Click);
             // 
             // changeLabel
             // 
