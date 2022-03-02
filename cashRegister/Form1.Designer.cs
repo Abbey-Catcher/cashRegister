@@ -235,7 +235,7 @@
             // 
             // titleLabel
             // 
-            this.titleLabel.BackColor = System.Drawing.Color.Teal;
+            this.titleLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.titleLabel.Location = new System.Drawing.Point(0, 0);
             this.titleLabel.Name = "titleLabel";
@@ -248,7 +248,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.Color.MediumOrchid;
             this.ClientSize = new System.Drawing.Size(619, 501);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.changeOutput);

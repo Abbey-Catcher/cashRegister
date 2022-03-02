@@ -102,6 +102,9 @@ namespace cashRegister
 
         private void newOrderButton_Click(object sender, EventArgs e)
         {
+
+            printReceiptButton.Enabled = false;
+
             redShoesInput.Text = String.Empty;
             blueShoesInput.Text = String.Empty;
             greyShoesInput.Text = String.Empty;
@@ -115,6 +118,17 @@ namespace cashRegister
             changeOutput.Text = String.Empty;
 
             receiptLabel.Text = String.Empty;
+
+            redShoes = 0;
+            blueShoes = 0;
+            greyShoes = 0;
+
+            subTotal = 0;
+            taxAmount = 0;
+            total = 0;
+
+            amountTendered = 0;
+            change = 0;
         }
     }
 }
